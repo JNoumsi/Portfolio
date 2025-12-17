@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Fabrice - Contact form, email, and social links.">
+  <title>Contact | Fabrice - Cloud Architect in the Making</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="header__top-bar"><div class="container"><div class="header__top-bar-content"><div class="header__top-bar-left"><span>📍 Montreal, QC</span></div><div class="header__top-bar-right"><span class="header__availability"><span class="header__availability-dot"></span>Available</span></div></div></div></div>
+    <div class="header__main"><div class="container"><div class="header__main-content"><a href="index.html" class="header__logo"><div class="header__logo-icon"><svg width="40" height="40" viewBox="0 0 40 40"><rect width="40" height="40" rx="8" fill="#2563EB"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Inter" font-weight="700" font-size="20">F</text></svg></div><span class="header__logo-name">Fabrice</span></a><nav class="header__nav"><a href="index.html" class="header__nav-link">Home</a><a href="about.html" class="header__nav-link">About</a><a href="experience.html" class="header__nav-link">Experience</a><a href="projects.html" class="header__nav-link">Projects</a><a href="blog.html" class="header__nav-link">Blog</a><a href="services.html" class="header__nav-link">Work With Me</a><a href="contact.html" class="header__nav-link header__nav-link--active" aria-current="page">Contact</a></nav><button class="header__menu-toggle" data-mobile-menu-toggle aria-label="Menu">☰</button></div></div></div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title">Get in Touch</h1>
+        <p class="page-hero__subtitle">Have a question or want to work together? I'd love to hear from you.</p>
+        <span class="badge badge--info badge--lg">⏱️ Response time: 24-48 hours</span>
+      </div>
+    </section>
+    <nav class="breadcrumb"><div class="container"><ol class="breadcrumb__list"><li><a href="index.html">Home</a> /</li><li><span class="breadcrumb__current">Contact</span></li></ol></div></nav>
+
+    <!-- Quick Contact Options -->
+    <section class="section section--white" aria-labelledby="quick-contact-heading">
+      <div class="container">
+        <h2 class="sr-only" id="quick-contact-heading">Quick Contact Options</h2>
+        <div class="quick-contact-grid">
+          <a href="mailto:hello@fabricedev.com" class="quick-contact-card">
+            <span class="quick-contact-card__icon">📧</span>
+            <h3 class="quick-contact-card__title">Email</h3>
+            <p class="quick-contact-card__value">hello@fabricedev.com</p>
+          </a>
+          <a href="https://calendly.com/fabrice" class="quick-contact-card" target="_blank" rel="noopener">
+            <span class="quick-contact-card__icon">📅</span>
+            <h3 class="quick-contact-card__title">Book a Call</h3>
+            <p class="quick-contact-card__value">Schedule 30 min</p>
+          </a>
+          <a href="https://linkedin.com/in/fabrice" class="quick-contact-card" target="_blank" rel="noopener">
+            <span class="quick-contact-card__icon">💼</span>
+            <h3 class="quick-contact-card__title">LinkedIn</h3>
+            <p class="quick-contact-card__value">Connect with me</p>
+          </a>
+          <a href="https://twitter.com/fabrice" class="quick-contact-card" target="_blank" rel="noopener">
+            <span class="quick-contact-card__icon">💬</span>
+            <h3 class="quick-contact-card__title">Twitter/X</h3>
+            <p class="quick-contact-card__value">@fabrice</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section section--light" aria-labelledby="form-heading">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Form -->
+          <div class="contact-form-wrapper">
+            <h2 class="contact-form__title" id="form-heading">Send a Message</h2>
+            <form class="form" data-contact-form data-validate>
+              <div class="form__group">
+                <label for="topic" class="form__label">What's this about? *</label>
+                <select id="topic" name="topic" class="form__select" data-validate-field="required" required>
+                  <option value="">Select a topic...</option>
+                  <option value="job">💼 Job Opportunity</option>
+                  <option value="freelance">🤝 Freelance Project</option>
+                  <option value="collaboration">🌐 Collaboration</option>
+                  <option value="question">❓ General Question</option>
+                  <option value="feedback">💬 Feedback</option>
+                  <option value="other">📝 Other</option>
+                </select>
+                <span class="form__error" data-validate-error></span>
+              </div>
+              
+              <div class="form__row form__row--2">
+                <div class="form__group">
+                  <label for="name" class="form__label form__label--required">Your Name *</label>
+                  <input type="text" id="name" name="name" class="form__input" data-validate-field="required" required>
+                  <span class="form__error" data-validate-error></span>
+                </div>
+                <div class="form__group">
+                  <label for="email" class="form__label form__label--required">Email Address *</label>
+                  <input type="email" id="email" name="email" class="form__input" data-validate-field="required|email" required>
+                  <span class="form__error" data-validate-error></span>
+                </div>
+              </div>
+              
+              <div class="form__group">
+                <label for="company" class="form__label">Company/Organization</label>
+                <input type="text" id="company" name="company" class="form__input">
+              </div>
+              
+              <div class="form__group">
+                <label for="message" class="form__label form__label--required">Your Message *</label>
+                <textarea id="message" name="message" class="form__textarea" rows="6" data-validate-field="required|minLength:20" required placeholder="Tell me about your project, question, or opportunity..."></textarea>
+                <span class="form__error" data-validate-error></span>
+                <span class="form__help">Minimum 20 characters</span>
+              </div>
+              
+              <div class="form__group">
+                <label for="found" class="form__label">How did you find me?</label>
+                <select id="found" name="found" class="form__select">
+                  <option value="">Select...</option>
+                  <option value="search">Search Engine</option>
+                  <option value="linkedin">LinkedIn</option>
+                  <option value="twitter">Twitter/X</option>
+                  <option value="github">GitHub</option>
+                  <option value="referral">Referral</option>
+                  <option value="blog">Blog Post</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form__group">
+                <label class="form__checkbox">
+                  <input type="checkbox" name="privacy" class="form__checkbox-input" data-validate-field="required" required>
+                  <span class="form__checkbox-label">I agree to the <a href="privacy.html">Privacy Policy</a> *</span>
+                </label>
+                <span class="form__error" data-validate-error></span>
+              </div>
+              
+              <div class="form__actions">
+                <button type="submit" class="btn btn--primary btn--lg">Send Message</button>
+              </div>
+            </form>
+            
+            <!-- Success State -->
+            <div class="form__success is-hidden" data-form-success>
+              <span class="form__success-icon">✓</span>
+              <h3 class="form__success-title">Message Sent!</h3>
+              <p class="form__success-text">Thank you for reaching out. I'll get back to you within 24-48 hours.</p>
+              <a href="index.html" class="btn btn--primary">Back to Home</a>
+            </div>
+          </div>
+          
+          <!-- Sidebar -->
+          <aside class="contact-sidebar">
+            <div class="contact-sidebar__card">
+              <h3>Contact Details</h3>
+              <div class="contact-sidebar__item"><span>📍</span><span>Montreal, Quebec, Canada</span></div>
+              <div class="contact-sidebar__item"><span>📧</span><a href="mailto:hello@fabricedev.com">hello@fabricedev.com</a></div>
+              <div class="contact-sidebar__item"><span>🕐</span><span>EST (UTC-5)</span></div>
+            </div>
+            
+            <div class="contact-sidebar__card contact-sidebar__card--success">
+              <h3>Availability</h3>
+              <p><span class="header__availability-dot"></span> <strong>Currently Available</strong></p>
+              <p>Open to full-time roles, freelance projects, and collaborations.</p>
+            </div>
+            
+            <div class="contact-sidebar__card contact-sidebar__card--info">
+              <h3>💡 Quick Tip</h3>
+              <p>For job opportunities, please include the role title and whether it's remote, hybrid, or on-site.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Links -->
+    <section class="section section--white" aria-labelledby="social-heading">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">🌐 Find Me Online</span>
+          <h2 class="section__title" id="social-heading">Social Links</h2>
+        </header>
+        
+        <div class="social-grid">
+          <a href="https://linkedin.com/in/fabrice" class="social-card social-card--linkedin" target="_blank" rel="noopener">
+            <span class="social-card__icon">in</span>
+            <h3>LinkedIn</h3>
+            <p>Professional network</p>
+          </a>
+          <a href="https://github.com/fabrice" class="social-card social-card--github" target="_blank" rel="noopener">
+            <span class="social-card__icon">⚙</span>
+            <h3>GitHub</h3>
+            <p>Code & projects</p>
+          </a>
+          <a href="https://twitter.com/fabrice" class="social-card social-card--twitter" target="_blank" rel="noopener">
+            <span class="social-card__icon">𝕏</span>
+            <h3>Twitter/X</h3>
+            <p>Thoughts & updates</p>
+          </a>
+          <a href="https://youtube.com/@fabrice" class="social-card social-card--youtube" target="_blank" rel="noopener">
+            <span class="social-card__icon">▶</span>
+            <h3>YouTube</h3>
+            <p>Videos & tutorials</p>
+          </a>
+          <a href="https://dev.to/fabrice" class="social-card social-card--devto" target="_blank" rel="noopener">
+            <span class="social-card__icon">DEV</span>
+            <h3>Dev.to</h3>
+            <p>Tech articles</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick FAQ -->
+    <section class="section section--light" aria-labelledby="faq-heading">
+      <div class="container container--narrow">
+        <header class="section__header">
+          <h2 class="section__title" id="faq-heading">Quick FAQ</h2>
+        </header>
+        
+        <div class="quick-faq">
+          <div class="quick-faq__item">
+            <h3>What's the best way to reach you?</h3>
+            <p>Email is best for detailed inquiries. For quick questions, Twitter DMs work great.</p>
+          </div>
+          <div class="quick-faq__item">
+            <h3>How quickly do you respond?</h3>
+            <p>I aim to respond within 24-48 hours during business days.</p>
+          </div>
+          <div class="quick-faq__item">
+            <h3>Do you offer free consultations?</h3>
+            <p>Yes! I offer a free 30-minute discovery call for potential projects.</p>
+          </div>
+          <div class="quick-faq__item">
+            <h3>Are you open to relocation?</h3>
+            <p>I prefer remote work but am open to discussing relocation for the right opportunity.</p>
+          </div>
+        </div>
+        
+        <p class="quick-faq__more"><a href="services.html#faq">View full FAQ →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__main"><div class="container"><div class="footer__main-content"><div class="footer__column"><a href="index.html"><svg width="40" height="40" viewBox="0 0 40 40"><rect width="40" height="40" rx="8" fill="#2563EB"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Inter" font-weight="700" font-size="20">F</text></svg><span>Fabrice</span></a></div><div class="footer__column"><h4>Navigation</h4><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li></ul></div><div class="footer__column"><h4>Contact</h4><p>✉️ hello@fabricedev.com</p></div></div></div></div>
+    <div class="footer__bottom"><div class="container"><span>© 2024 Fabrice</span></div></div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
