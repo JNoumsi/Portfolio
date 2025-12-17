@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page not found - Fabrice's Portfolio">
+  <title>404 - Page Not Found | Fabrice</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="404">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="header__main"><div class="container"><div class="header__main-content"><a href="index.html" class="header__logo"><div class="header__logo-icon"><svg width="40" height="40" viewBox="0 0 40 40"><rect width="40" height="40" rx="8" fill="#2563EB"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Inter" font-weight="700" font-size="20">F</text></svg></div><span class="header__logo-name">Fabrice</span></a><nav class="header__nav"><a href="index.html" class="header__nav-link">Home</a><a href="about.html" class="header__nav-link">About</a><a href="experience.html" class="header__nav-link">Experience</a><a href="projects.html" class="header__nav-link">Projects</a><a href="blog.html" class="header__nav-link">Blog</a><a href="services.html" class="header__nav-link">Work With Me</a><a href="contact.html" class="header__nav-link">Contact</a></nav><button class="header__menu-toggle" data-mobile-menu-toggle aria-label="Menu">☰</button></div></div></div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main-content">
+    <!-- 404 Content -->
+    <section class="error-section">
+      <div class="container">
+        <div class="error-content">
+          <div class="error-content__illustration">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="90" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="2"/>
+              <path d="M60 120 Q100 80 140 120" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <circle cx="70" cy="80" r="8" fill="#6B7280"/>
+              <circle cx="130" cy="80" r="8" fill="#6B7280"/>
+              <text x="100" y="160" text-anchor="middle" fill="#9CA3AF" font-family="Inter" font-size="14">Lost in the cloud?</text>
+            </svg>
+          </div>
+          <span class="error-content__code">404</span>
+          <h1 class="error-content__title">Oops! Page Not Found</h1>
+          <p class="error-content__description">The page you're looking for seems to have drifted into the cloud. Don't worry—even the best architects encounter broken links sometimes!</p>
+          
+          <div class="error-content__actions">
+            <a href="index.html" class="btn btn--primary btn--lg">Go Home</a>
+            <button onclick="history.back()" class="btn btn--outline btn--lg">Go Back</button>
+          </div>
+          
+          <div class="error-content__search">
+            <p>Or try searching:</p>
+            <form class="error-search-form" action="search.html" method="GET">
+              <input type="search" name="q" class="error-search-form__input" placeholder="Search the site..." aria-label="Search">
+              <button type="submit" class="btn btn--primary">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Helpful Links -->
+    <section class="section section--white" aria-labelledby="helpful-heading">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="helpful-heading">Maybe You Were Looking For...</h2>
+        </header>
+        
+        <div class="helpful-links-grid">
+          <a href="index.html" class="helpful-link-card">
+            <span class="helpful-link-card__icon">🏠</span>
+            <h3 class="helpful-link-card__title">Home</h3>
+            <p class="helpful-link-card__description">Start from the beginning</p>
+          </a>
+          <a href="about.html" class="helpful-link-card">
+            <span class="helpful-link-card__icon">👤</span>
+            <h3 class="helpful-link-card__title">About</h3>
+            <p class="helpful-link-card__description">Learn more about me</p>
+          </a>
+          <a href="projects.html" class="helpful-link-card">
+            <span class="helpful-link-card__icon">💼</span>
+            <h3 class="helpful-link-card__title">Projects</h3>
+            <p class="helpful-link-card__description">View my portfolio</p>
+          </a>
+          <a href="blog.html" class="helpful-link-card">
+            <span class="helpful-link-card__icon">📝</span>
+            <h3 class="helpful-link-card__title">Blog</h3>
+            <p class="helpful-link-card__description">Read my articles</p>
+          </a>
+          <a href="contact.html" class="helpful-link-card">
+            <span class="helpful-link-card__icon">📧</span>
+            <h3 class="helpful-link-card__title">Contact</h3>
+            <p class="helpful-link-card__description">Get in touch</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__main"><div class="container"><div class="footer__main-content"><div class="footer__column"><a href="index.html"><svg width="40" height="40" viewBox="0 0 40 40"><rect width="40" height="40" rx="8" fill="#2563EB"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Inter" font-weight="700" font-size="20">F</text></svg><span>Fabrice</span></a></div><div class="footer__column"><h4>Navigation</h4><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div></div></div></div>
+    <div class="footer__bottom"><div class="container"><span>© 2024 Fabrice</span></div></div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
