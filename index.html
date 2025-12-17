@@ -1,0 +1,953 @@
+=====================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fabrice - Bilingual Cloud Architect in the Making. L2 Tech Support professional transitioning to Cloud Architecture and Cybersecurity. Based in Montreal, QC.">
+  <meta name="keywords" content="Cloud Architect, AWS, Cybersecurity, Montreal, Bilingual, IT Professional, Portfolio">
+  <meta name="author" content="Fabrice">
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fabrice | Bilingual Cloud Architect in the Making">
+  <meta property="og:description" content="L2 Tech Support professional transitioning to Cloud Architecture and Cybersecurity. Explore my projects, certifications, and journey.">
+  <meta property="og:image" content="assets/images/og-image.png">
+  <meta property="og:url" content="https://fabricedev.com">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Fabrice | Bilingual Cloud Architect in the Making</title>
+</head>
+<body data-page="home">
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================
+       HEADER
+       ======================================== -->
+  <header class="header" role="banner">
+    <!-- Top Bar -->
+    <div class="header__top-bar">
+      <div class="container">
+        <div class="header__top-bar-content">
+          <!-- Left: Location & Email -->
+          <div class="header__top-bar-left">
+            <span class="header__top-bar-item">
+              <svg class="header__top-bar-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Montreal, QC
+            </span>
+            <a href="mailto:hello@fabricedev.com" class="header__top-bar-link header__top-bar-item">
+              <svg class="header__top-bar-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              hello@fabricedev.com
+            </a>
+          </div>
+          
+          <!-- Right: Availability & Social -->
+          <div class="header__top-bar-right">
+            <span class="header__availability">
+              <span class="header__availability-dot"></span>
+              Available for opportunities
+            </span>
+            <div class="header__social-icons">
+              <a href="https://linkedin.com/in/fabrice" class="header__social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </a>
+              <a href="https://github.com/fabrice" class="header__social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="https://twitter.com/fabrice" class="header__social-icon" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="header__main">
+      <div class="container">
+        <div class="header__main-content">
+          <!-- Logo -->
+          <a href="index.html" class="header__logo">
+            <div class="header__logo-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="8" fill="#2563EB"/>
+                <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Inter" font-weight="700" font-size="20">F</text>
+              </svg>
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name">Fabrice</span>
+              <span class="header__logo-tagline">Cloud Architect in the Making</span>
+            </div>
+          </a>
+
+          <!-- Navigation -->
+          <nav class="header__nav" aria-label="Main navigation">
+            <a href="index.html" class="header__nav-link header__nav-link--active" aria-current="page">Home</a>
+            <a href="about.html" class="header__nav-link">About</a>
+            
+            <!-- Experience Dropdown -->
+            <div class="header__nav-dropdown" data-dropdown>
+              <button class="header__nav-link header__nav-dropdown-trigger" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+                Experience
+                <svg class="header__nav-dropdown-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="header__nav-dropdown-menu" data-dropdown-menu role="menu">
+                <a href="experience.html#work" class="header__nav-dropdown-item" role="menuitem">💼 Work Experience</a>
+                <a href="experience.html#education" class="header__nav-dropdown-item" role="menuitem">🎓 Education</a>
+                <a href="experience.html#skills" class="header__nav-dropdown-item" role="menuitem">🛠️ Skills</a>
+                <a href="experience.html#certifications" class="header__nav-dropdown-item" role="menuitem">📜 Certifications</a>
+              </div>
+            </div>
+            
+            <a href="projects.html" class="header__nav-link">Projects</a>
+            <a href="blog.html" class="header__nav-link">Blog</a>
+            
+            <!-- Services Dropdown -->
+            <div class="header__nav-dropdown" data-dropdown>
+              <button class="header__nav-link header__nav-dropdown-trigger" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+                Work With Me
+                <svg class="header__nav-dropdown-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="header__nav-dropdown-menu" data-dropdown-menu role="menu">
+                <a href="services.html#employers" class="header__nav-dropdown-item" role="menuitem">💼 For Employers</a>
+                <a href="services.html#clients" class="header__nav-dropdown-item" role="menuitem">🤝 For Clients</a>
+                <a href="services.html#collaborators" class="header__nav-dropdown-item" role="menuitem">🌐 For Collaborators</a>
+              </div>
+            </div>
+            
+            <a href="contact.html" class="header__nav-link">Contact</a>
+          </nav>
+
+          <!-- Header Actions -->
+          <div class="header__actions">
+            <!-- Language Toggle -->
+            <div class="header__lang-toggle">
+              <button class="header__lang-toggle-btn header__lang-toggle-btn--active" aria-pressed="true">EN</button>
+              <span class="header__lang-toggle-divider">|</span>
+              <button class="header__lang-toggle-btn" aria-pressed="false">FR</button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="header__menu-toggle" data-mobile-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+              <svg class="header__menu-toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="header__mobile-nav-backdrop" data-mobile-menu-backdrop></div>
+    <nav class="header__mobile-nav" id="mobile-nav" data-mobile-menu aria-label="Mobile navigation">
+      <div class="header__mobile-nav-header">
+        <span class="header__mobile-nav-title">Menu</span>
+        <button class="header__mobile-nav-close" data-mobile-menu-close aria-label="Close menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="header__mobile-nav-content">
+        <a href="index.html" class="header__mobile-nav-link header__mobile-nav-link--active">Home</a>
+        <a href="about.html" class="header__mobile-nav-link">About</a>
+        <a href="experience.html" class="header__mobile-nav-link">Experience</a>
+        <a href="projects.html" class="header__mobile-nav-link">Projects</a>
+        <a href="blog.html" class="header__mobile-nav-link">Blog</a>
+        <a href="services.html" class="header__mobile-nav-link">Work With Me</a>
+        <a href="contact.html" class="header__mobile-nav-link">Contact</a>
+        
+        <div class="header__mobile-nav-cta">
+          <a href="contact.html" class="btn btn--primary btn--block">Get in Touch</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================
+       MAIN CONTENT
+       ======================================== -->
+  <main id="main-content">
+    
+    <!-- ====== HERO SECTION ====== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__container">
+          <!-- Hero Content -->
+          <div class="hero__content">
+            <p class="hero__greeting">
+              <span class="hero__wave">👋</span>
+              Hi, I'm
+            </p>
+            <h1 class="hero__name">Fabrice</h1>
+            <p class="hero__role">Bilingual Cloud Architect in the Making</p>
+            <p class="hero__description">
+              L2 Tech Support professional transitioning to Cloud Architecture &amp; Cybersecurity. 
+              Building expertise through hands-on projects, certifications, and continuous learning. 
+              Based in Montreal, serving clients worldwide in English and French.
+            </p>
+            
+            <!-- Hero Pills -->
+            <div class="hero__pills">
+              <span class="hero__pill">☁️ AWS Certified</span>
+              <span class="hero__pill">🔒 Security Focused</span>
+              <span class="hero__pill">🐍 Python</span>
+              <span class="hero__pill">🌐 Bilingual EN/FR</span>
+            </div>
+            
+            <!-- Hero CTAs -->
+            <div class="hero__ctas">
+              <a href="projects.html" class="btn btn--primary btn--lg">
+                View My Projects
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="contact.html" class="btn btn--outline-light btn--lg">Get in Touch</a>
+              <a href="assets/docs/Fabrice-Resume.pdf" class="btn btn--ghost btn--lg" download>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download CV
+              </a>
+            </div>
+            
+            <!-- Hero Stats -->
+            <div class="hero__stats">
+              <div class="hero__stat">
+                <span class="hero__stat-value">3+</span>
+                <span class="hero__stat-label">Years IT Experience</span>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-value">3</span>
+                <span class="hero__stat-label">Active Certifications</span>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-value">10+</span>
+                <span class="hero__stat-label">Projects Completed</span>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-value">2</span>
+                <span class="hero__stat-label">Languages</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Hero Visual -->
+          <div class="hero__visual">
+            <div class="hero__image-wrapper">
+              <img src="assets/images/fabrice-portrait.jpg" alt="Fabrice - Cloud Architect" class="hero__image" width="350" height="350">
+              
+              <!-- Floating Card: Current Learning -->
+              <div class="hero__floating-card hero__floating-card--top">
+                <span class="hero__floating-card-icon">📚</span>
+                <div class="hero__floating-card-content">
+                  <span class="hero__floating-card-label">Currently Learning</span>
+                  <span class="hero__floating-card-value">AWS Solutions Architect</span>
+                </div>
+              </div>
+              
+              <!-- Floating Card: Next Cert -->
+              <div class="hero__floating-card hero__floating-card--bottom">
+                <span class="hero__floating-card-icon">🎯</span>
+                <div class="hero__floating-card-content">
+                  <span class="hero__floating-card-label">Next Goal</span>
+                  <span class="hero__floating-card-value">March 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tech Logos Bar -->
+        <div class="hero__tech-logos">
+          <div class="hero__tech-logos-list">
+            <img src="assets/images/logos/aws.svg" alt="AWS" class="hero__tech-logo" width="60" height="60">
+            <img src="assets/images/logos/azure.svg" alt="Azure" class="hero__tech-logo" width="60" height="60">
+            <img src="assets/images/logos/python.svg" alt="Python" class="hero__tech-logo" width="60" height="60">
+            <img src="assets/images/logos/linux.svg" alt="Linux" class="hero__tech-logo" width="60" height="60">
+            <img src="assets/images/logos/docker.svg" alt="Docker" class="hero__tech-logo" width="60" height="60">
+            <img src="assets/images/logos/git.svg" alt="Git" class="hero__tech-logo" width="60" height="60">
+            <img src="assets/images/logos/terraform.svg" alt="Terraform" class="hero__tech-logo" width="60" height="60">
+            <img src="assets/images/logos/comptia.svg" alt="CompTIA" class="hero__tech-logo" width="60" height="60">
+            <img src="assets/images/logos/vscode.svg" alt="VS Code" class="hero__tech-logo" width="60" height="60">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CURRENT FOCUS SECTION ====== -->
+    <section class="section section--light" aria-labelledby="now-heading">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">🎯 What I'm Working On</span>
+          <h2 class="section__title" id="now-heading">Current Focus</h2>
+          <p class="section__subtitle">Here's what I'm currently learning, building, and planning next.</p>
+        </header>
+        
+        <div class="now-cards">
+          <!-- Learning Card -->
+          <article class="now-card">
+            <span class="now-card__icon">📚</span>
+            <span class="now-card__label">Learning</span>
+            <h3 class="now-card__title">AWS Solutions Architect</h3>
+            <p class="now-card__meta">Professional Certification</p>
+            <div class="now-card__progress">
+              <div class="progress-labeled">
+                <div class="progress-labeled__header">
+                  <span class="progress-labeled__label">Progress</span>
+                  <span class="progress-labeled__value">65%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress__bar" style="width: 65%"></div>
+                </div>
+              </div>
+            </div>
+            <a href="experience.html#certifications" class="now-card__link">View Certification Journey →</a>
+          </article>
+          
+          <!-- Building Card -->
+          <article class="now-card">
+            <span class="now-card__icon">🔨</span>
+            <span class="now-card__label">Building</span>
+            <h3 class="now-card__title">Cloud Infrastructure Lab</h3>
+            <p class="now-card__meta">Personal Project</p>
+            <div class="now-card__progress">
+              <div class="progress-labeled">
+                <div class="progress-labeled__header">
+                  <span class="progress-labeled__label">Progress</span>
+                  <span class="progress-labeled__value">40%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress__bar progress__bar--success" style="width: 40%"></div>
+                </div>
+              </div>
+            </div>
+            <a href="projects.html" class="now-card__link">View Project Details →</a>
+          </article>
+          
+          <!-- Up Next Card -->
+          <article class="now-card">
+            <span class="now-card__icon">🎯</span>
+            <span class="now-card__label">Up Next</span>
+            <h3 class="now-card__title">CompTIA Security+</h3>
+            <p class="now-card__meta">Target: June 2025</p>
+            <div class="now-card__progress">
+              <div class="progress-labeled">
+                <div class="progress-labeled__header">
+                  <span class="progress-labeled__label">Preparation</span>
+                  <span class="progress-labeled__value">20%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress__bar progress__bar--warning" style="width: 20%"></div>
+                </div>
+              </div>
+            </div>
+            <a href="experience.html#certifications" class="now-card__link">View Full Roadmap →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT PREVIEW SECTION ====== -->
+    <section class="section section--white" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-preview">
+          <!-- Image Side -->
+          <div class="about-preview__image-wrapper">
+            <img src="assets/images/fabrice-working.jpg" alt="Fabrice working at desk" class="about-preview__image" width="500" height="400">
+            <div class="about-preview__stats">
+              <div class="about-preview__stat">
+                <span class="about-preview__stat-value">B.S.</span>
+                <span class="about-preview__stat-label">IT @ WGU (In Progress)</span>
+              </div>
+              <div class="about-preview__stat">
+                <span class="about-preview__stat-value">5+</span>
+                <span class="about-preview__stat-label">Years in Tech</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Content Side -->
+          <div class="about-preview__content">
+            <span class="section__eyebrow">👤 About Me</span>
+            <h2 class="section__title section__title--left" id="about-heading">From Support to Solutions</h2>
+            
+            <div class="about-preview__text">
+              <p><strong>Why I Do This:</strong> Technology has always been my way of solving problems and helping others. I believe that the best IT professionals don't just fix issues—they anticipate them and build systems that prevent them.</p>
+              
+              <p><strong>My Journey:</strong> Starting in technical support gave me a unique perspective. I've seen firsthand how infrastructure decisions impact end users, and that drives my approach to cloud architecture—always keeping the human element in mind.</p>
+              
+              <p><strong>The Goal:</strong> My 10-year vision is to achieve financial freedom while building systems that make a real difference. I'm not just learning cloud technologies; I'm building a foundation for a career that spans consulting, entrepreneurship, and continuous innovation.</p>
+            </div>
+            
+            <div class="about-preview__highlights">
+              <div class="about-preview__highlight">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Bilingual (English &amp; French)</span>
+              </div>
+              <div class="about-preview__highlight">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Learning in Public Advocate</span>
+              </div>
+              <div class="about-preview__highlight">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Family-Focused Professional</span>
+              </div>
+              <div class="about-preview__highlight">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Problem Solver at Heart</span>
+              </div>
+            </div>
+            
+            <a href="about.html" class="btn btn--primary">
+              Read My Full Story
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== FEATURED PROJECTS SECTION ====== -->
+    <section class="section section--light" aria-labelledby="projects-heading">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">💼 Portfolio</span>
+          <h2 class="section__title" id="projects-heading">Featured Projects</h2>
+          <p class="section__subtitle">A selection of my recent work across cloud infrastructure, automation, and security.</p>
+        </header>
+        
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <article class="card card--project card--hover-lift">
+            <div class="card__image">
+              <img src="assets/images/projects/cloud-lab.jpg" alt="Cloud Infrastructure Lab" width="300" height="170">
+              <div class="card__image-overlay">
+                <a href="projects.html#cloud-lab" class="btn btn--sm btn--white">View Details</a>
+                <a href="https://github.com/fabrice/cloud-lab" class="btn btn--sm btn--outline-light" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+            <div class="card__content">
+              <span class="card__tag card__tag--passion">🔥 Passion Project</span>
+              <h3 class="card__title"><a href="projects.html#cloud-lab">AWS Cloud Infrastructure Lab</a></h3>
+              <p class="card__description">Multi-tier architecture with VPC, EC2, RDS, and S3. Implemented infrastructure as code with Terraform and automated deployments.</p>
+              <div class="card__tech-stack">
+                <span class="badge badge--tech">AWS</span>
+                <span class="badge badge--tech">Terraform</span>
+                <span class="badge badge--tech">Python</span>
+              </div>
+              <div class="card__impact">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+                <span>Reduced deployment time by 60%</span>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Project Card 2 -->
+          <article class="card card--project card--hover-lift">
+            <div class="card__image">
+              <img src="assets/images/projects/automation.jpg" alt="IT Automation Scripts" width="300" height="170">
+              <div class="card__image-overlay">
+                <a href="projects.html#automation" class="btn btn--sm btn--white">View Details</a>
+                <a href="https://github.com/fabrice/automation" class="btn btn--sm btn--outline-light" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+            <div class="card__content">
+              <span class="card__tag card__tag--work">💼 Work</span>
+              <h3 class="card__title"><a href="projects.html#automation">IT Support Automation Suite</a></h3>
+              <p class="card__description">Collection of Python and PowerShell scripts for automating common IT support tasks, ticket management, and system monitoring.</p>
+              <div class="card__tech-stack">
+                <span class="badge badge--tech">Python</span>
+                <span class="badge badge--tech">PowerShell</span>
+                <span class="badge badge--tech">Bash</span>
+              </div>
+              <div class="card__impact">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+                <span>Saved 15+ hours/week</span>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Project Card 3 -->
+          <article class="card card--project card--hover-lift">
+            <div class="card__image">
+              <img src="assets/images/projects/finance-tracker.jpg" alt="Family Finance Tracker" width="300" height="170">
+              <div class="card__image-overlay">
+                <a href="projects.html#finance" class="btn btn--sm btn--white">View Details</a>
+              </div>
+            </div>
+            <div class="card__content">
+              <span class="card__tag card__tag--passion">🔥 Passion Project</span>
+              <h3 class="card__title"><a href="projects.html#finance">Family Financial System</a></h3>
+              <p class="card__description">Automated financial tracking system with PDF extraction, OCR for receipts, Google Sheets integration, and intelligent categorization.</p>
+              <div class="card__tech-stack">
+                <span class="badge badge--tech">Python</span>
+                <span class="badge badge--tech">Google Apps Script</span>
+                <span class="badge badge--tech">OCR</span>
+              </div>
+              <div class="card__impact">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+                <span>100% budget visibility</span>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Project Card 4 -->
+          <article class="card card--project card--hover-lift">
+            <div class="card__image">
+              <img src="assets/images/projects/security-lab.jpg" alt="Security Lab" width="300" height="170">
+              <div class="card__image-overlay">
+                <a href="projects.html#security" class="btn btn--sm btn--white">View Details</a>
+              </div>
+            </div>
+            <div class="card__content">
+              <span class="card__tag card__tag--cert">📜 Certification</span>
+              <h3 class="card__title"><a href="projects.html#security">Home Security Lab</a></h3>
+              <p class="card__description">Virtual security lab environment for practicing penetration testing, vulnerability assessment, and security monitoring.</p>
+              <div class="card__tech-stack">
+                <span class="badge badge--tech">Kali Linux</span>
+                <span class="badge badge--tech">VirtualBox</span>
+                <span class="badge badge--tech">Wireshark</span>
+              </div>
+              <div class="card__impact">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+                <span>Security+ preparation</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        
+        <div class="section__cta">
+          <a href="projects.html" class="btn btn--primary btn--lg">
+            View All Projects
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SKILLS SNAPSHOT SECTION ====== -->
+    <section class="section section--white" aria-labelledby="skills-heading">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">🛠️ Technical Skills</span>
+          <h2 class="section__title" id="skills-heading">Skills Snapshot</h2>
+          <p class="section__subtitle">Technologies and tools I work with daily.</p>
+        </header>
+        
+        <!-- Filter Pills -->
+        <div class="filter-pills filter-pills--centered">
+          <button class="filter-pill is-active" data-skill-filter="all">All</button>
+          <button class="filter-pill" data-skill-filter="cloud">Cloud</button>
+          <button class="filter-pill" data-skill-filter="security">Security</button>
+          <button class="filter-pill" data-skill-filter="languages">Languages</button>
+          <button class="filter-pill" data-skill-filter="tools">Tools</button>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- AWS -->
+          <div class="skill-card" data-skill-card="cloud">
+            <img src="assets/images/logos/aws.svg" alt="" class="skill-card__logo" width="48" height="48">
+            <span class="skill-card__name">AWS</span>
+            <span class="skill-card__level">Advanced</span>
+            <div class="progress skill-card__progress">
+              <div class="progress__bar" style="width: 75%"></div>
+            </div>
+            <span class="skill-card__duration">2+ years</span>
+          </div>
+          
+          <!-- Python -->
+          <div class="skill-card" data-skill-card="languages">
+            <img src="assets/images/logos/python.svg" alt="" class="skill-card__logo" width="48" height="48">
+            <span class="skill-card__name">Python</span>
+            <span class="skill-card__level">Advanced</span>
+            <div class="progress skill-card__progress">
+              <div class="progress__bar" style="width: 80%"></div>
+            </div>
+            <span class="skill-card__duration">3+ years</span>
+          </div>
+          
+          <!-- Linux -->
+          <div class="skill-card" data-skill-card="tools">
+            <img src="assets/images/logos/linux.svg" alt="" class="skill-card__logo" width="48" height="48">
+            <span class="skill-card__name">Linux</span>
+            <span class="skill-card__level">Advanced</span>
+            <div class="progress skill-card__progress">
+              <div class="progress__bar" style="width: 85%"></div>
+            </div>
+            <span class="skill-card__duration">4+ years</span>
+          </div>
+          
+          <!-- Docker -->
+          <div class="skill-card" data-skill-card="tools">
+            <img src="assets/images/logos/docker.svg" alt="" class="skill-card__logo" width="48" height="48">
+            <span class="skill-card__name">Docker</span>
+            <span class="skill-card__level">Intermediate</span>
+            <div class="progress skill-card__progress">
+              <div class="progress__bar" style="width: 60%"></div>
+            </div>
+            <span class="skill-card__duration">1+ year</span>
+          </div>
+          
+          <!-- Terraform -->
+          <div class="skill-card" data-skill-card="cloud">
+            <img src="assets/images/logos/terraform.svg" alt="" class="skill-card__logo" width="48" height="48">
+            <span class="skill-card__name">Terraform</span>
+            <span class="skill-card__level">Intermediate</span>
+            <div class="progress skill-card__progress">
+              <div class="progress__bar" style="width: 55%"></div>
+            </div>
+            <span class="skill-card__duration">1+ year</span>
+          </div>
+          
+          <!-- Git -->
+          <div class="skill-card" data-skill-card="tools">
+            <img src="assets/images/logos/git.svg" alt="" class="skill-card__logo" width="48" height="48">
+            <span class="skill-card__name">Git</span>
+            <span class="skill-card__level">Advanced</span>
+            <div class="progress skill-card__progress">
+              <div class="progress__bar" style="width: 80%"></div>
+            </div>
+            <span class="skill-card__duration">3+ years</span>
+          </div>
+          
+          <!-- Bash -->
+          <div class="skill-card" data-skill-card="languages">
+            <img src="assets/images/logos/bash.svg" alt="" class="skill-card__logo" width="48" height="48">
+            <span class="skill-card__name">Bash</span>
+            <span class="skill-card__level">Advanced</span>
+            <div class="progress skill-card__progress">
+              <div class="progress__bar" style="width: 75%"></div>
+            </div>
+            <span class="skill-card__duration">3+ years</span>
+          </div>
+          
+          <!-- SQL -->
+          <div class="skill-card" data-skill-card="languages">
+            <img src="assets/images/logos/sql.svg" alt="" class="skill-card__logo" width="48" height="48">
+            <span class="skill-card__name">SQL</span>
+            <span class="skill-card__level">Intermediate</span>
+            <div class="progress skill-card__progress">
+              <div class="progress__bar" style="width: 65%"></div>
+            </div>
+            <span class="skill-card__duration">2+ years</span>
+          </div>
+          
+          <!-- Azure -->
+          <div class="skill-card" data-skill-card="cloud">
+            <img src="assets/images/logos/azure.svg" alt="" class="skill-card__logo" width="48" height="48">
+            <span class="skill-card__name">Azure</span>
+            <span class="skill-card__level">Learning</span>
+            <div class="progress skill-card__progress">
+              <div class="progress__bar" style="width: 35%"></div>
+            </div>
+            <span class="skill-card__duration">6 months</span>
+          </div>
+          
+          <!-- Security -->
+          <div class="skill-card" data-skill-card="security">
+            <img src="assets/images/logos/security.svg" alt="" class="skill-card__logo" width="48" height="48">
+            <span class="skill-card__name">Security</span>
+            <span class="skill-card__level">Learning</span>
+            <div class="progress skill-card__progress">
+              <div class="progress__bar" style="width: 40%"></div>
+            </div>
+            <span class="skill-card__duration">Ongoing</span>
+          </div>
+        </div>
+        
+        <div class="section__cta">
+          <a href="experience.html#skills" class="btn btn--outline">
+            View Full Skills &amp; Certifications
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CTA SECTION ====== -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 class="cta-section__title" id="cta-heading">Let's Work Together</h2>
+        <p class="cta-section__text">Whether you're looking to hire, collaborate, or just connect—I'd love to hear from you.</p>
+        <div class="cta-section__buttons">
+          <a href="services.html#employers" class="btn btn--white btn--lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            Hire Me
+          </a>
+          <a href="services.html#clients" class="btn btn--outline-light btn--lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            Start a Project
+          </a>
+          <a href="contact.html" class="btn btn--outline-light btn--lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            Get in Touch
+          </a>
+        </div>
+        <p class="cta-section__badge">
+          <span class="header__availability-dot"></span>
+          Currently available for new opportunities
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="footer" role="contentinfo">
+    <!-- Newsletter -->
+    <div class="footer__newsletter">
+      <div class="container">
+        <div class="footer__newsletter-content">
+          <div class="footer__newsletter-text">
+            <h3>Stay Updated</h3>
+            <p>Get notified about new projects, blog posts, and tech insights.</p>
+          </div>
+          <form class="footer__newsletter-form" action="#" method="POST">
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input type="email" id="newsletter-email" name="email" class="footer__newsletter-input" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
+        <p class="footer__newsletter-privacy">No spam, unsubscribe anytime. Read our <a href="privacy.html">Privacy Policy</a>.</p>
+      </div>
+    </div>
+
+    <!-- Main Footer -->
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__main-content">
+          <!-- Brand Column -->
+          <div class="footer__column footer__column--brand">
+            <div class="footer__brand">
+              <a href="index.html" class="footer__brand-logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="40" height="40" rx="8" fill="#2563EB"/>
+                  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Inter" font-weight="700" font-size="20">F</text>
+                </svg>
+                <span class="footer__brand-logo-text">Fabrice</span>
+              </a>
+              <p class="footer__brand-tagline">Bilingual Cloud Architect in the Making</p>
+              <p class="footer__brand-description">Building cloud solutions and sharing the journey. Based in Montreal, serving clients worldwide.</p>
+              
+              <div class="footer__brand-social">
+                <a href="https://linkedin.com/in/fabrice" class="footer__brand-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/fabrice" class="footer__brand-social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+                <a href="https://twitter.com/fabrice" class="footer__brand-social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </a>
+                <a href="https://youtube.com/@fabrice" class="footer__brand-social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                </a>
+                <a href="https://dev.to/fabrice" class="footer__brand-social-link" aria-label="Dev.to" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6v4.36h.58c.37 0 .65-.08.84-.23.19-.16.29-.42.29-.78v-2.34c0-.36-.1-.62-.29-.78zm13.37-7.55H3.21a1.7 1.7 0 0 0-1.7 1.7v15.6c0 .94.76 1.7 1.7 1.7h17.58c.94 0 1.7-.76 1.7-1.7V4.2c0-.94-.76-1.7-1.7-1.7zm-10.1 11.51c0 1.33-.61 2.07-1.86 2.07H6.78V8.08H8.9c1.18 0 1.79.74 1.79 2.07v3.86zm4.96-5.05h-2.6v2.07h1.61v1.53h-1.61v2.07h2.6v1.53h-3.24c-.4 0-.73-.12-.99-.37-.26-.25-.39-.58-.39-.99V9.56c0-.41.13-.74.39-.99.26-.25.59-.37.99-.37h3.24v1.53zm5.29 5.71c-.52 1.17-1.26 1.76-2.23 1.76-.5 0-.91-.15-1.23-.45-.31-.3-.47-.72-.47-1.25v-.58h1.25v.44c0 .4.17.6.51.6.22 0 .4-.1.55-.28.14-.19.21-.47.21-.83V9.08h1.65v6.59h-.24z"/>
+                  </svg>
+                </a>
+              </div>
+              
+              <div class="footer__brand-certs">
+                <img src="assets/images/logos/aws-certified.svg" alt="AWS Certified" class="footer__brand-cert" width="48" height="48">
+                <img src="assets/images/logos/comptia-aplus.svg" alt="CompTIA A+" class="footer__brand-cert" width="48" height="48">
+                <img src="assets/images/logos/itil.svg" alt="ITIL Foundation" class="footer__brand-cert" width="48" height="48">
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Column -->
+          <div class="footer__column">
+            <h4 class="footer__column-title">Navigation</h4>
+            <ul class="footer__links">
+              <li class="footer__link"><a href="index.html">Home</a></li>
+              <li class="footer__link"><a href="about.html">About</a></li>
+              <li class="footer__link"><a href="experience.html">Experience</a></li>
+              <li class="footer__link"><a href="projects.html">Projects</a></li>
+              <li class="footer__link"><a href="blog.html">Blog</a></li>
+              <li class="footer__link"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services Column -->
+          <div class="footer__column">
+            <h4 class="footer__column-title">Services</h4>
+            <ul class="footer__links">
+              <li class="footer__link"><a href="services.html#employers">For Employers</a></li>
+              <li class="footer__link"><a href="services.html#clients">For Clients</a></li>
+              <li class="footer__link"><a href="services.html#collaborators">Collaborations</a></li>
+            </ul>
+            <h4 class="footer__column-title mt-6">Resources</h4>
+            <ul class="footer__links">
+              <li class="footer__link"><a href="assets/docs/Fabrice-Resume.pdf" download>Download Resume</a></li>
+              <li class="footer__link"><a href="blog.html">Tech Blog</a></li>
+              <li class="footer__link"><a href="uses.html">Uses</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Column -->
+          <div class="footer__column">
+            <h4 class="footer__column-title">Contact</h4>
+            <div class="footer__contact-item">
+              <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Montreal, Quebec, Canada</span>
+            </div>
+            <div class="footer__contact-item">
+              <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:hello@fabricedev.com" class="footer__contact-link">hello@fabricedev.com</a>
+            </div>
+            <div class="footer__contact-item">
+              <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>EST (UTC-5)</span>
+            </div>
+            
+            <div class="footer__availability-card">
+              <span class="header__availability">
+                <span class="header__availability-dot"></span>
+                Available for opportunities
+              </span>
+              <p>Open to full-time roles, freelance projects, and collaborations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-content">
+          <div class="footer__bottom-left">
+            <span>&copy; 2024 Fabrice. All rights reserved.</span>
+            <a href="privacy.html" class="footer__bottom-link">Privacy Policy</a>
+            <a href="terms.html" class="footer__bottom-link">Terms of Use</a>
+          </div>
+          <div class="footer__bottom-right">
+            <div class="header__lang-toggle">
+              <button class="header__lang-toggle-btn header__lang-toggle-btn--active">EN</button>
+              <span class="header__lang-toggle-divider">|</span>
+              <button class="header__lang-toggle-btn">FR</button>
+            </div>
+            <button class="footer__back-to-top" aria-label="Back to top">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+              </svg>
+              Top
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Screen Reader Announcer -->
+  <div id="sr-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
