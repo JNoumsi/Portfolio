@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Fabrice's portfolio of cloud, automation, and security projects.">
+  <title>Projects | Fabrice - Cloud Architect in the Making</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="projects">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="header__top-bar"><div class="container"><div class="header__top-bar-content"><div class="header__top-bar-left"><span>📍 Montreal, QC</span><a href="mailto:hello@fabricedev.com">✉️ hello@fabricedev.com</a></div><div class="header__top-bar-right"><span class="header__availability"><span class="header__availability-dot"></span>Available</span></div></div></div></div>
+    <div class="header__main"><div class="container"><div class="header__main-content"><a href="index.html" class="header__logo"><div class="header__logo-icon"><svg width="40" height="40" viewBox="0 0 40 40"><rect width="40" height="40" rx="8" fill="#2563EB"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Inter" font-weight="700" font-size="20">F</text></svg></div><div class="header__logo-text"><span class="header__logo-name">Fabrice</span></div></a><nav class="header__nav"><a href="index.html" class="header__nav-link">Home</a><a href="about.html" class="header__nav-link">About</a><a href="experience.html" class="header__nav-link">Experience</a><a href="projects.html" class="header__nav-link header__nav-link--active" aria-current="page">Projects</a><a href="blog.html" class="header__nav-link">Blog</a><a href="services.html" class="header__nav-link">Work With Me</a><a href="contact.html" class="header__nav-link">Contact</a></nav><div class="header__actions"><button class="header__menu-toggle" data-mobile-menu-toggle aria-label="Menu">☰</button></div></div></div></div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title">Projects</h1>
+        <p class="page-hero__subtitle">A collection of my work across cloud infrastructure, automation, and security.</p>
+      </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb"><div class="container"><ol class="breadcrumb__list"><li class="breadcrumb__item"><a href="index.html">Home</a> /</li><li class="breadcrumb__item"><span class="breadcrumb__current">Projects</span></li></ol></div></nav>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+      <div class="container">
+        <div class="filter-bar__content">
+          <!-- Source Filters -->
+          <div class="filter-bar__group">
+            <span class="filter-bar__label">Source:</span>
+            <div class="filter-pills">
+              <button class="filter-pill is-active" data-source-filter="all">All</button>
+              <button class="filter-pill" data-source-filter="work">💼 Work</button>
+              <button class="filter-pill" data-source-filter="cert">📜 Cert Labs</button>
+              <button class="filter-pill" data-source-filter="school">🎓 School</button>
+              <button class="filter-pill" data-source-filter="passion">🔥 Passion</button>
+            </div>
+          </div>
+          <!-- Tech Filters -->
+          <div class="filter-bar__group">
+            <span class="filter-bar__label">Tech:</span>
+            <div class="filter-pills">
+              <button class="filter-pill is-active" data-tech-filter="all">All</button>
+              <button class="filter-pill" data-tech-filter="aws">AWS</button>
+              <button class="filter-pill" data-tech-filter="python">Python</button>
+              <button class="filter-pill" data-tech-filter="terraform">Terraform</button>
+              <button class="filter-pill" data-tech-filter="security">Security</button>
+            </div>
+          </div>
+          <!-- Sort -->
+          <div class="filter-bar__group">
+            <label for="sort-select" class="filter-bar__label">Sort:</label>
+            <select id="sort-select" class="filter-bar__select" data-sort>
+              <option value="newest">Newest First</option>
+              <option value="oldest">Oldest First</option>
+              <option value="featured">Featured</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section section--white" aria-labelledby="projects-grid-heading">
+      <div class="container">
+        <h2 class="sr-only" id="projects-grid-heading">All Projects</h2>
+        
+        <div class="projects-grid" data-project-grid>
+          <!-- Project 1: Cloud Lab -->
+          <article class="card card--project card--hover-lift" data-project-card data-source="passion" data-techs="aws,terraform,python" data-date="2024-10" data-featured="true">
+            <div class="card__image">
+              <img src="assets/images/projects/cloud-lab.jpg" alt="AWS Cloud Infrastructure Lab" width="300" height="170">
+              <div class="card__image-overlay">
+                <button class="btn btn--sm btn--white" data-modal-trigger="project-cloud-lab">View Details</button>
+                <a href="https://github.com/fabrice/cloud-lab" class="btn btn--sm btn--outline-light" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <div class="card__content">
+              <span class="card__tag card__tag--passion">🔥 Passion Project</span>
+              <h3 class="card__title">AWS Cloud Infrastructure Lab</h3>
+              <p class="card__description">Multi-tier architecture with VPC, EC2, RDS, and S3. Implemented infrastructure as code with Terraform and automated deployments.</p>
+              <div class="card__tech-stack">
+                <span class="badge badge--tech">AWS</span>
+                <span class="badge badge--tech">Terraform</span>
+                <span class="badge badge--tech">Python</span>
+              </div>
+              <div class="card__impact">📈 Reduced deployment time by 60%</div>
+              <div class="card__meta"><span>Oct 2024</span></div>
+            </div>
+          </article>
+
+          <!-- Project 2: Automation Suite -->
+          <article class="card card--project card--hover-lift" data-project-card data-source="work" data-techs="python,bash" data-date="2024-06" data-featured="true">
+            <div class="card__image">
+              <img src="assets/images/projects/automation.jpg" alt="IT Support Automation Suite" width="300" height="170">
+              <div class="card__image-overlay">
+                <button class="btn btn--sm btn--white" data-modal-trigger="project-automation">View Details</button>
+                <a href="https://github.com/fabrice/automation" class="btn btn--sm btn--outline-light" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <div class="card__content">
+              <span class="card__tag card__tag--work">💼 Work</span>
+              <h3 class="card__title">IT Support Automation Suite</h3>
+              <p class="card__description">Collection of Python and PowerShell scripts for automating common IT support tasks, ticket management, and system monitoring.</p>
+              <div class="card__tech-stack">
+                <span class="badge badge--tech">Python</span>
+                <span class="badge badge--tech">PowerShell</span>
+                <span class="badge badge--tech">Bash</span>
+              </div>
+              <div class="card__impact">📈 Saved 15+ hours/week</div>
+              <div class="card__meta"><span>Jun 2024</span></div>
+            </div>
+          </article>
+
+          <!-- Project 3: Finance System -->
+          <article class="card card--project card--hover-lift" data-project-card data-source="passion" data-techs="python" data-date="2024-08" data-featured="false">
+            <div class="card__image">
+              <img src="assets/images/projects/finance-tracker.jpg" alt="Family Financial System" width="300" height="170">
+              <div class="card__image-overlay">
+                <button class="btn btn--sm btn--white" data-modal-trigger="project-finance">View Details</button>
+              </div>
+            </div>
+            <div class="card__content">
+              <span class="card__tag card__tag--passion">🔥 Passion Project</span>
+              <h3 class="card__title">Family Financial System</h3>
+              <p class="card__description">Automated financial tracking system with PDF extraction, OCR for receipts, Google Sheets integration, and intelligent categorization.</p>
+              <div class="card__tech-stack">
+                <span class="badge badge--tech">Python</span>
+                <span class="badge badge--tech">Google Apps Script</span>
+                <span class="badge badge--tech">OCR</span>
+              </div>
+              <div class="card__impact">📈 100% budget visibility</div>
+              <div class="card__meta"><span>Aug 2024</span></div>
+            </div>
+          </article>
+
+          <!-- Project 4: Security Lab -->
+          <article class="card card--project card--hover-lift" data-project-card data-source="cert" data-techs="security" data-date="2024-09" data-featured="false">
+            <div class="card__image">
+              <img src="assets/images/projects/security-lab.jpg" alt="Home Security Lab" width="300" height="170">
+              <div class="card__image-overlay">
+                <button class="btn btn--sm btn--white" data-modal-trigger="project-security">View Details</button>
+              </div>
+            </div>
+            <div class="card__content">
+              <span class="card__tag card__tag--cert">📜 Certification</span>
+              <h3 class="card__title">Home Security Lab</h3>
+              <p class="card__description">Virtual security lab environment for practicing penetration testing, vulnerability assessment, and security monitoring.</p>
+              <div class="card__tech-stack">
+                <span class="badge badge--tech">Kali Linux</span>
+                <span class="badge badge--tech">VirtualBox</span>
+                <span class="badge badge--tech">Wireshark</span>
+              </div>
+              <div class="card__impact">📈 Security+ preparation</div>
+              <div class="card__meta"><span>Sep 2024</span></div>
+            </div>
+          </article>
+
+          <!-- Project 5: Portfolio Website -->
+          <article class="card card--project card--hover-lift" data-project-card data-source="passion" data-techs="javascript" data-date="2024-12" data-featured="false">
+            <div class="card__image">
+              <img src="assets/images/projects/portfolio.jpg" alt="Portfolio Website" width="300" height="170">
+              <div class="card__image-overlay">
+                <button class="btn btn--sm btn--white" data-modal-trigger="project-portfolio">View Details</button>
+                <a href="https://github.com/fabrice/portfolio" class="btn btn--sm btn--outline-light" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <div class="card__content">
+              <span class="card__tag card__tag--passion">🔥 Passion Project</span>
+              <h3 class="card__title">Portfolio Website</h3>
+              <p class="card__description">Modern, responsive portfolio website built with vanilla HTML, CSS, and JavaScript. Focus on performance and accessibility.</p>
+              <div class="card__tech-stack">
+                <span class="badge badge--tech">HTML</span>
+                <span class="badge badge--tech">CSS</span>
+                <span class="badge badge--tech">JavaScript</span>
+              </div>
+              <div class="card__impact">📈 Learning in public</div>
+              <div class="card__meta"><span>Dec 2024</span></div>
+            </div>
+          </article>
+
+          <!-- Project 6: WGU Capstone -->
+          <article class="card card--project card--hover-lift" data-project-card data-source="school" data-techs="aws,python" data-date="2024-05" data-featured="false">
+            <div class="card__image">
+              <img src="assets/images/projects/capstone.jpg" alt="WGU Capstone Project" width="300" height="170">
+              <div class="card__image-overlay">
+                <button class="btn btn--sm btn--white" data-modal-trigger="project-capstone">View Details</button>
+              </div>
+            </div>
+            <div class="card__content">
+              <span class="card__tag card__tag--school">🎓 School</span>
+              <h3 class="card__title">Cloud Migration Assessment Tool</h3>
+              <p class="card__description">WGU capstone project: automated tool to assess on-premises infrastructure and generate cloud migration recommendations.</p>
+              <div class="card__tech-stack">
+                <span class="badge badge--tech">Python</span>
+                <span class="badge badge--tech">AWS</span>
+                <span class="badge badge--tech">Analysis</span>
+              </div>
+              <div class="card__impact">📈 Academic excellence</div>
+              <div class="card__meta"><span>May 2024</span></div>
+            </div>
+          </article>
+        </div>
+
+        <!-- No Results Message -->
+        <div class="no-results is-hidden" data-no-results>
+          <p>No projects match your current filters. Try adjusting your selection.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="section section--light" aria-labelledby="coming-soon-heading">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">🚀 What's Next</span>
+          <h2 class="section__title" id="coming-soon-heading">Coming Soon</h2>
+        </header>
+        
+        <div class="coming-soon-grid">
+          <article class="card card--coming-soon">
+            <div class="card__image"><span class="card__image-icon">🔐</span></div>
+            <div class="card__content">
+              <span class="card__tag card__tag--future">🔮 Planned</span>
+              <h3 class="card__title">Zero Trust Network Implementation</h3>
+              <p class="card__description">Building a zero trust security model from scratch for small business environments.</p>
+              <div class="card__tech-stack"><span class="badge badge--tech">Security</span><span class="badge badge--tech">Networking</span></div>
+            </div>
+          </article>
+          
+          <article class="card card--coming-soon">
+            <div class="card__image"><span class="card__image-icon">☸️</span></div>
+            <div class="card__content">
+              <span class="card__tag card__tag--future">🔮 Planned</span>
+              <h3 class="card__title">Kubernetes Home Lab</h3>
+              <p class="card__description">Self-hosted Kubernetes cluster for learning container orchestration and GitOps.</p>
+              <div class="card__tech-stack"><span class="badge badge--tech">Kubernetes</span><span class="badge badge--tech">Docker</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 class="cta-section__title">Have a Project in Mind?</h2>
+        <p class="cta-section__text">Let's discuss how I can help bring your ideas to life.</p>
+        <div class="cta-section__buttons">
+          <a href="contact.html" class="btn btn--white btn--lg">Start a Conversation</a>
+          <a href="services.html" class="btn btn--outline-light btn--lg">View Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Modals -->
+  <div class="modal" data-modal="project-cloud-lab" aria-hidden="true" role="dialog">
+    <div class="modal__dialog modal__dialog--lg">
+      <button class="modal__close" data-modal-close aria-label="Close">✕</button>
+      <div class="modal__body">
+        <img src="assets/images/projects/cloud-lab-large.jpg" alt="" class="modal__image" width="800" height="450">
+        <div class="modal__content">
+          <span class="card__tag card__tag--passion">🔥 Passion Project</span>
+          <h2 class="modal__title">AWS Cloud Infrastructure Lab</h2>
+          <div class="modal__section"><h3>The Problem</h3><p>Needed a reproducible environment for practicing AWS architecture and demonstrating cloud skills to potential employers.</p></div>
+          <div class="modal__section"><h3>The Solution</h3><p>Built a multi-tier architecture using Terraform for infrastructure as code, including VPC with public/private subnets, EC2 instances, RDS database, and S3 storage.</p></div>
+          <div class="modal__section"><h3>Key Learnings</h3><ul><li>Infrastructure as Code best practices</li><li>AWS networking and security groups</li><li>Cost optimization strategies</li></ul></div>
+          <div class="modal__tech"><span class="badge badge--tech">AWS</span><span class="badge badge--tech">Terraform</span><span class="badge badge--tech">Python</span><span class="badge badge--tech">Bash</span></div>
+          <div class="modal__links"><a href="https://github.com/fabrice/cloud-lab" class="btn btn--primary" target="_blank">View on GitHub</a><a href="#" class="btn btn--outline">Live Demo</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__main"><div class="container"><div class="footer__main-content"><div class="footer__column"><a href="index.html"><svg width="40" height="40" viewBox="0 0 40 40"><rect width="40" height="40" rx="8" fill="#2563EB"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Inter" font-weight="700" font-size="20">F</text></svg><span>Fabrice</span></a></div><div class="footer__column"><h4>Navigation</h4><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="experience.html">Experience</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer__column"><h4>Contact</h4><p>📍 Montreal, QC</p><p>✉️ hello@fabricedev.com</p></div></div></div></div>
+    <div class="footer__bottom"><div class="container"><span>© 2024 Fabrice</span></div></div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
